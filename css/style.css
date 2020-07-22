@@ -30,10 +30,7 @@ body {
 .p_style { 
 
 	height:fit-content;
-	margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+	margin: 0;
 
 
  }
@@ -41,10 +38,7 @@ body {
  .page_title {
 	
 	height: fit-content; 
-	margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+	margin: 0;
 
  }
 
@@ -270,14 +264,11 @@ body {
   }
 
 .list {
+
 	list-style: none;
 	list-style-position: inside;
     padding: 0;
-	margin-block-start: 0;
-	margin-block-end: 0;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	padding-inline-start: 0;
+	margin: 0; 
 }
 
 .group {
@@ -310,15 +301,6 @@ div.list_title {
 	text-transform: uppercase;
 }
 
-
-/* не работает 
-.mini_block:nth-child(3)::after {
-    
-
-	background-color: #efefef;
-}
-
-*/
 
 .mini_block::after {
     
@@ -457,7 +439,7 @@ div.list_title {
 .card_image {
 
 	width: 100%;
-	height: 100%;  
+	object-fit: cover;   
 }
 
 
@@ -467,7 +449,7 @@ div.list_title {
 	width: 168px;
 	height: 154px; 
 	position: absolute; 
-	top: calc(50% - 168px);
+	top: 211px;
 	left: calc(0% - 84px);
 	background-color: #5e42b0;
 }
@@ -478,7 +460,7 @@ div.list_title {
 	width: 168px;
 	height: 154px; 
 	position: absolute; 
-	top: calc(50% - 168px);
+	top: 211px;
 	right: calc(0% - 84px);
 	background-color: #5e42b0;
 }
@@ -827,7 +809,7 @@ div.list_title {
 
     width: 116px;
     height: 116px;
-    top: -21%;
+    top: -86px;
     left: 4%;
  
 }
@@ -836,7 +818,7 @@ div.list_title {
 	
 	width: 116px;
     height: 116px;
-    top: -21%;
+    top: -86px;
     left: 4%;
 
 }
@@ -1018,7 +1000,7 @@ div.list_title {
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: 0; 
-	margin-bottom: 270px;
+	margin-bottom: 18px;
 	padding-left: 4%; 
 	padding-right: 2%; 
 }
@@ -1031,9 +1013,13 @@ div.list_title {
 }
 
 .footballer {
-
-	right: 32%;
-    top: 10%;
+	
+	display: block;
+	position: relative; 
+	right: 0; 
+	top: 0; 
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .players {
@@ -1047,7 +1033,7 @@ div.list_title {
 	font-size: 50px;
 	padding-left: 4%;
     padding-right: 2%;
-    margin-bottom: 270px; 
+    margin-bottom: 18px; 
 }
 
 .list_content2 {
@@ -1058,8 +1044,12 @@ div.list_title {
 
 .basketballer {
 	
-	left: 2%;
-    top: 12%;
+	display: block;
+	position: relative; 
+	left: 0; 
+	top: 0; 
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .cards {
